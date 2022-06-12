@@ -1,0 +1,203 @@
+<style>
+    body{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 1.4;
+        color: white;
+    }
+    
+    h2{
+        font-size: 4.2rem;
+    }
+    
+    #navbar{
+        display: flex;
+        position: fixed;
+        justify-content: flex-end; /* pa poner la list (about, work y contact) al final */
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgb(196, 54, 54);
+        height: 13%;
+        margin-right: 2rem;
+    }
+
+    #navbar a{
+        display:block;
+        font-size: 2.2rem;
+        padding: 2rem; /* pa separar los items de la lista */
+    }
+
+    ul{
+        list-style: none;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+
+    .nav-list{
+        display: flex;
+        margin-right: 2rem;
+    }
+
+    @media (max-width: 28.75em){
+        .nav-list {
+        margin: 0 1rem;
+        }
+    }
+
+    /* cambio de sección */
+
+    #welcome-section{
+        background-color: rgb(58, 57, 57);
+        display: flex;
+        flex-direction: column;   /*La propiedad CSS flex-direction especifica cómo colocar los objetos flexibles en el contenedor flexible 
+                                  definiendo el eje principal y la dirección (normal o al revés). Osea: puede tener columna (empezando de izq a derecha y viceversa) y filas (same anterior) */
+        justify-content: center;
+        align-items:center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /* cambio de sección */
+
+    #projects{
+        text-align: center;
+        padding: 10rem 2rem;
+        background-color: rgb(87, 87, 179);
+        width: 100%;
+    }
+
+    #projects-section-header{
+        max-width: 640px;
+        margin: 0 auto 6rem auto;
+        border-bottom: 0.2rem solid whitesmoke; /*el subrayado*/
+    }
+
+    .project{ /* cada link */
+        background-color: gray;  /* background color del titulo de el proyecto */ /* no se pq no sirve */
+        border-radius: 2px;
+    }
+
+    .projects-grid{
+        display: grid;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        margin-bottom: 6rem;
+
+    }
+   
+    /* cambio de sección */
+
+    #contact{
+        color: black;
+        height: 100%;
+        background-color: rgb(95, 95, 95);  
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 2rem;
+      
+    }
+
+    .contact-section-header{
+        font-style: italic;
+    }
+
+    .contact-link{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 980px;
+        margin-top: 4rem;
+        flex-wrap: wrap;
+    }
+
+    .contact-details{
+        font-size: 2.4rem;
+        text-shadow: 2px 2px 1px #1f1f1f;
+        padding: 2rem;
+    }
+            
+
+
+</style>
+
+
+<html>
+    <body>
+        <nav id="navbar">   <!-- tiene q estar fixed esto -->
+            <ul class="nav-list">
+                <li>
+                    <a href="#welcome-section">About</a>
+                </li>
+                <li>
+                    <a href="#projects">Work</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <section id="welcome-section">
+            <h1>Hey I am Lucas</h1><br> 
+            <p>a web developer</p>
+        </section>
+
+
+        <section id="projects">
+
+            <h2 class="projects-section-header">These are some of my projects</h2>
+
+            <div class="projects-grid">
+                <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank" class="project project-tile">
+                    <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg" alt="project">
+                    <p class="project-title">Tribute Page</p>
+                </a>
+
+                <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="project project-tile">
+                    <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png" alt="project">
+                    <p class="project-title">Random Quote Machine</p>
+                </a>
+                
+                <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="project project-tile">
+                    <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png" alt="project">
+                    <p class="project-title">JavaScript Calculator</p>
+                </a>
+
+                <a href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank" class="project project-tile">
+                    <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/map.jpg" alt="project">
+                    <p class="project-title">Map Data Across the Globe</p>
+                </a>
+            </div>
+            
+        </section>
+
+
+        <section id="contact">
+            <div class="contact-section-header">
+                <h2>Let's work together...</h2>
+                <p>How do you take your coffee?</p>
+            </div>
+            
+            <div class="contact-link">
+                <a href="mi-facebook" target="_blank" class="contact-details">Facebook</a>
+                <a href="mi-github" target="_blank" class="contact-details">Github</a>
+                <a href="mi-twitter" target="_blank" class="contact-details">Twitter</a>
+                <a href="mi-mail" target="_blank" class="contact-details">Send a mail</a>
+                <a href="mi-cel" target="_blank" class="contact-details">Call me</a>
+            </div>
+        </section>
+    </body>
+
+</html>
+

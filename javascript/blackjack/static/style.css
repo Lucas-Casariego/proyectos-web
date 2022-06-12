@@ -1,0 +1,53 @@
+.container {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.flex-blackjack-row-1,
+.flex-blackjack-row-2,
+.flex-blackjack-row-3 {
+  display: flex;
+  border: 1px solid black;
+  padding: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flex-blackjack-row-1,
+.flex-blackjack-row-2 {
+  background: url("https://t4.ftcdn.net/jpg/02/52/57/95/360_F_252579585_aBvswBd8wS1Oi1jk1ML1U01YBxusKJul.jpg");
+  color: #e1e1e1;
+}
+
+.flex-blackjack-row-1 div {
+  border: 1px solid black;
+  padding: 10px;
+  flex: 1; /* le da igual importancia a ambos divs (You-Dealer) y hace q ocupen el mismo espacio */
+  text-align: center;
+  height: 350px;
+}
+
+.flex-blackjack-row-1 img {
+  width: 25%;
+  padding: 10px;
+}
+
+.flex-blackjack-row-2 button {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.flex-blackjack-row-2 div {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+table,
+td,
+th {
+  padding: 10px;
+  border: 1px solid black;
+}
